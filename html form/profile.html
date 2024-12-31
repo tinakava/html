@@ -1,0 +1,282 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            /* background-color: #0d1b2a; */
+            background-color: #00274d;
+            color: white;
+            align-items: center;
+    
+        }
+        form{
+            /* background-color: #1b263b; */
+            background-color: rgba(255,255,255,0.1);
+            padding: 15px 50px 40px 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 40px 0px 170px 345px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            
+
+
+        }
+        h1{
+            margin-bottom: 10px;
+            font-size: x-large;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 10px 0px 0px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        .p1{
+            background-color: #e5e5e5;
+            color: black;
+        }
+        button{
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #ff6347;
+        }
+        p{
+            font-size: 15px;
+            color: white;
+        }
+        p a{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="home.html">
+        <h1>Profile Form</h1>
+        <input class="p1" type="fname" placeholder="First Name" required><br><br>
+        <input class="p1" type="lname" placeholder="Last Name" required><br><br>
+        <input class="p1" type="email" placeholder="Email" required><br><br>
+        <input class="p1" type="password" placeholder="password" required><br><br>
+        <input class="p1" type="file" placeholder="No file chosen" required><br><br>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#666;
+            color: #333;
+            height: 110%;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .profile {
+            flex: 1;
+            max-width: 30%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .profile h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .profile p {
+            color: #666;
+        }
+
+        .form-section {
+            flex: 2;
+            max-width: 70%;
+            padding: 20px;
+        }
+
+        .form-section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .save-btn {
+            background-color:chocolate;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .experience-section {
+            margin-top: 20px;
+        }
+
+        .experience-section h3 {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 998px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile, .form-section {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .form-group input {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .save-btn {
+                font-size: 14px;
+                padding: 8px 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .form-section h2 {
+                font-size: 18px;
+            }
+
+            .form-group label {
+                font-size: 14px;
+            }
+
+            .profile img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .save-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="c1.jpg" alt="Profile Picture">
+            <h3>Rohit</h3>
+            <p>Rohit12@bbb.com</p>
+        </div>
+
+        <div class="form-section">
+            <h2>Profile Settings</h2>
+
+            <div class="form-group">
+                <label for="first-name">Name</label>
+                <input type="text" id="first-name" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" placeholder="Surname" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+                <input type="text" id="phone-number" placeholder="Enter phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Enter address" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" placeholder="Enter email ID" required>
+            </div>
+            <div class="form-group">
+                <label for="education">Education</label>
+                <input type="text" id="education" placeholder="Education" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" placeholder="Country" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State/Region</label>
+                <input type="text" id="state" placeholder="State" required>
+            </div>
+            <button type="submit" class="save-btn">Save Profile</button>
+
+            <div class="experience-section">
+                <h3>Edit Experience</h3>
+                <div class="form-group">
+                    <label for="experience">Experience in Designing</label>
+                    <input type="text" id="experience" placeholder="Experience">
+                </div>
+                <div class="form-group">
+                    <label for="additional-details">Additional Details</label>
+                    <input type="text" id="additional-details" placeholder="Additional details">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
